@@ -1,0 +1,22 @@
+.footer {
+  background-color: $primary-color;
+  &__container {
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+  }
+  &__heading {
+    margin-bottom: 1.6rem;
+  }
+  &__sns {
+    margin-top: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,43 @@
+.services {
+  margin-bottom: 9.6rem;
+  scroll-margin-top: 10rem;
+
+  &__heading {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 6.2rem;
+    &::after {
+      content: "";
+      background-image: url(../image/marker.svg);
+      background-repeat: no-repeat;
+      width: 13.2rem;
+      height: 3rem;
+      position: absolute;
+      bottom: -3rem;
+      right: 2rem;
+    }
+  }
+  &__desc {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+  &__list {
+    max-width: 1048px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+  }
+  &__item {
+    animation: opacityTransform 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  }
+  &__logo {
+    margin: 0 auto 1.6rem;
+  }
+}

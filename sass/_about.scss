@@ -1,0 +1,45 @@
+.about {
+  margin-bottom: 6.4rem;
+  scroll-margin-top: 10rem;
+
+  &__container {
+    max-width: 1048px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__desc {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  &__image {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-left: 9rem;
+    padding: 0 1.2rem;
+    overflow: hidden;
+    img {
+      margin-top: 1.6rem;
+      border-radius: 3rem;
+      background-size: cover;
+    }
+    animation: rightTo 1.5s ease-in-out 50ms;
+  }
+  &__heading {
+    margin: 1.6rem 0;
+  }
+  &__info {
+    margin: 3.2rem 0 1.9rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0.8rem 0;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .about__container {
+    padding: 0 2rem;
+    .about__image {
+      margin-left: 0;
+    }
+  }
+}

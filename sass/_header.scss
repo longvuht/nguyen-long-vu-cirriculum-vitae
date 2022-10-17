@@ -1,0 +1,25 @@
+.header {
+  background-color: $primary_color;
+  padding: 1.6rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+  }
+  &__image {
+    cursor: pointer;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+}

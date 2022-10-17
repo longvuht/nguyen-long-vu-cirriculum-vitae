@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+a:visited,
+a:link {
+  padding: 0 0.8rem;
+  color: $text_color;
+  font-weight: 700;
+  line-height: calc(25.6 / 16);
+  text-transform: capitalize;
+}
+a:hover,
+a:active {
+  color: rgba($text_color, 0.7);
+  transform: translateY(-2px);
+  transition: transform 0.18s ease-in-out;
+}
+.fa-brands {
+  font-size: 3rem;
+}
+@keyframes rightTo {
+  0% {
+    opacity: 0;
+    transform: translatex(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+@keyframes leftTo {
+  0% {
+    opacity: 0;
+    transform: translatex(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+@keyframes scaleLeftTo {
+  0% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes hiddenText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityTransform {
+  0% {
+    opacity: 0;
+    transform: translatey(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@media (max-width: 375px) {
+  .hero,
+  .about,
+  .services,
+  .skills,
+  .exp,
+  .footer,
+  .wave,
+  .header__list {
+    display: none;
+  }
+}
