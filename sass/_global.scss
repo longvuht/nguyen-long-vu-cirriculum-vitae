@@ -9,6 +9,7 @@ body {
   font-size: 1.6rem;
   line-height: 1;
   color: $text-color;
+  background-color: $primary-color;
 }
 
 .container {
@@ -22,7 +23,6 @@ a:link {
   color: $text_color;
   font-weight: 700;
   line-height: calc(25.6 / 16);
-  text-transform: capitalize;
 }
 a:hover,
 a:active {

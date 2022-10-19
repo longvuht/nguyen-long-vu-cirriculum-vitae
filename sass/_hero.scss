@@ -22,16 +22,16 @@
     display: inline-block;
     margin: 0.8rem 0 3.2rem;
     position: relative;
-    &::after {
-      content: "";
-      background-image: url(../image/marker.svg);
-      background-repeat: no-repeat;
-      width: 13.2rem;
-      height: 3rem;
-      position: absolute;
-      bottom: -3rem;
-      right: 0.6rem;
-    }
+    // &::after {
+    //   content: "";
+    //   background-image: url(../image/marker.svg);
+    //   background-repeat: no-repeat;
+    //   width: 13.2rem;
+    //   height: 3rem;
+    //   position: absolute;
+    //   bottom: -3rem;
+    //   right: 0.6rem;
+    // }
     animation: hiddenText 2s ease-in-out;
   }
   &__sns {
@@ -49,17 +49,6 @@
       font-size: 4rem;
     }
   }
-}
-.wave {
-  background-image: url(../image/wave-bg.svg);
-  height: 22rem;
-  width: auto;
-  min-width: 60rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 4.8rem;
-  transform-origin: top;
-  animation: animateWave 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @media screen and (max-width: 1023px) {
